@@ -1,0 +1,37 @@
+.logo {
+  display: block;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--accent-text-color);
+}
+.logo__header-line {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
+}
+
+.logo-dark {
+  color: var(--primary-title-color);
+}
+//Лого в футере
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+}
+.logo-light {
+  color: var(--primary-white-color);
+}

@@ -17,20 +17,26 @@
     pointer-events: none;
   }
 }
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 450px;
+  height: 609px;
 
-  width: 528px;
-  height: 581px;
   padding: 40px;
 
   background-color: var(--primary-white-color);
   border-radius: 4px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 @keyframes animate75 {
@@ -73,6 +79,7 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 1.17;
+  text-align: center;
 }
 
 .contact-form {
@@ -141,9 +148,9 @@
   @include centered-content;
   margin-bottom: 30px;
 
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 0.58;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 
@@ -151,10 +158,22 @@
     content: '';
     width: 16px;
     height: 15px;
-    margin-right: 9px;
+    margin-right: 8px;
     border: 2px solid var(--primary-title-color);
     border-radius: 3px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 9px;
+    }
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
+.contact-form__policy-link {
+  color: var(--accent-text-color);
+  text-decoration: underline;
 }
 .contact-form__check-agree:checked + .contact-form__checkbox-label::before {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='16' height='15' rx='2' fill='%232196F3'/%3e%3cpath d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3e%3c/svg%3e");
@@ -162,9 +181,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   border: currentColor;
-}
-.contact-form__policy-link {
-  color: var(--accent-text-color);
 }
 
 .contact-form__btn {

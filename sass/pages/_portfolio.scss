@@ -1,10 +1,20 @@
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__btn {
+  margin-bottom: 15px;
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
@@ -88,21 +98,31 @@
   color: var(--primary-text-color);
 }
 .examples {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
 
-  margin-bottom: -30px;
-  margin-right: -30px;
+    margin-bottom: -30px;
+    margin-right: -30px;
+  }
 }
 
 .examples__item {
-  flex-basis: calc(100% / 3 - 30px);
-
-  margin-bottom: 30px;
-  margin-right: 30px;
-
   border: 1px solid #eeeeee;
   cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .examples__link {
@@ -117,5 +137,6 @@
   }
 }
 .examples__content {
+  min-height: 146px;
   padding: 20px 24px;
 }

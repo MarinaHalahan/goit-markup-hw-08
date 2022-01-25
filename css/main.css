@@ -486,7 +486,6 @@ img {
     -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    margin-bottom: 60px;
   }
 }
 
@@ -822,6 +821,17 @@ img {
   height: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   right: -11px;
+}
+
+.mobile-contacts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero {

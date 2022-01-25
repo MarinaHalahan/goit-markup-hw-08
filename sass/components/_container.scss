@@ -1,7 +1,6 @@
 .container {
-  outline: 1px solid sandybrown;
   @include centered-margin;
-  // width: 100%;
+  width: 100%;
   padding: 0px 15px;
 
   @media screen and (min-width: 480px) {

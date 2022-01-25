@@ -8,12 +8,12 @@
 
   @media screen and (max-width: 767px) {
     flex-direction: column-reverse;
-    // margin-bottom: 60px;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    align-self: flex-start;
-    flex-wrap: nowrap;
+
+    margin-left: auto;
   }
 }
 .auth-box__item:not(:last-child) {
@@ -67,9 +67,9 @@
   @media screen and (max-width: 767px) {
     font-size: 24px;
   }
-  // /@media screen and (min-width: 768px) {
-  //   padding-top: 21px;
-  // }
+  @media screen and (min-width: 768px) and(max-width:1199px) {
+    padding-top: 21px;
+  }
 }
 
 .auth-box__icon {

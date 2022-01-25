@@ -12,7 +12,8 @@
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    justify-content: space-between;
+    align-self: flex-start;
+    flex-wrap: nowrap;
   }
 }
 .auth-box__item:not(:last-child) {
